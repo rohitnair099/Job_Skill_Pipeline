@@ -62,3 +62,25 @@ ax.legend().remove()
 - SQL and Python are the 2 top in demand skills for Data Engineers
 - AWS is the leading cloud provider establishing a slight margin over Azure
 - Most skills see a sharp recovery in the October, November months
+
+## 3. How well do jobs and skill pay for Data Engineers?
+
+### Visualising the data:
+``` python
+
+sns.boxplot(data=df_usa_top, x='salary_year_avg', y='job_title_short', order=job_order)
+sns.set_theme(style='ticks')
+
+plt.title('Job Title')
+plt.xlabel('Yearly Salary')
+
+```
+
+### Result
+
+![Salary Analysis](./images/salary_analysis.png)
+
+### Insights
+- Senior Data Scientists and Senior Data Engineers generally command higher median salaries than their non-senior counterparts
+- Compared median salaries across individual skills to identify technologies that offer strong earning potential, while comparing skill frequency to distinguish high-value skills from those most commonly required by employers
+- Combined salary analysis with skill-demand trends to identify technologies worth prioritizing for Data Engineers, balancing earning potential with market demand rather than focusing on salary alone
